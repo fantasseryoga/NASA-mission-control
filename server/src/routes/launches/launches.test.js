@@ -27,7 +27,7 @@ describe('LAUNCHES API', () => {
         const completeLaunchData = {
             mission: "Kepler USS exlore",
             rocket: "SS rocket",
-            target: "Kepler-62 f",
+            target: "Kepler-442 b",
             launchDate: "January 4, 2032"
         }
 
