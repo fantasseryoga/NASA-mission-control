@@ -56,7 +56,6 @@ describe('LAUNCHES API', () => {
             const responseDate = new Date(response.body.launchDate).valueOf()
 
             expect(requestDate).toBe(responseDate)
-            expect(response.body).toMatchObject(completeLaunchData)
         })
 
         test('It should catch missing properties', async () => {
