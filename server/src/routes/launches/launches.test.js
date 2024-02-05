@@ -41,7 +41,7 @@ describe('LAUNCHES API', () => {
         const LaucnhDataNoDate = {
             mission: "Kepler USS exlore",
             rocket: "SS rocket",
-            target: "Kepler-62 f",
+            target: "Kepler-442 f",
         }
 
 

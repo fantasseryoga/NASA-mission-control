@@ -1,5 +1,5 @@
 const launchesDB = require('../models/launches.mongo')
-const planetsDB = require('../models/planets.mongo')
+const planets = require('../models/planets.mongo')
 
 const DEFAULT_FLIGHT_NUMBER = 100
 
@@ -39,7 +39,9 @@ async function existsLaunchById(launchId) {
 }
 
 async function saveLaunch(launch) {
-    const planet = await planetsDB.findOne({
+    const planetss = await planets.find({})
+    console.log('planets isss: ', planetss)
+    const planet = await planets.findOne({
         keplerName: launch.target
     })
 
