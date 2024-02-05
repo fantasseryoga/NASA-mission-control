@@ -39,8 +39,6 @@ async function existsLaunchById(launchId) {
 }
 
 async function saveLaunch(launch) {
-    const planetss = await planets.find({})
-    console.log('planets isss: ', planetss)
     const planet = await planets.findOne({
         keplerName: launch.target
     })
