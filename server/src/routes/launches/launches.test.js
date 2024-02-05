@@ -41,7 +41,7 @@ describe('LAUNCHES API', () => {
         const LaucnhDataNoDate = {
             mission: "Kepler USS exlore",
             rocket: "SS rocket",
-            target: "Kepler-442 f",
+            target: "Kepler-442 b",
         }
 
 
@@ -56,7 +56,7 @@ describe('LAUNCHES API', () => {
             const responseDate = new Date(response.body.launchDate).valueOf()
 
             expect(requestDate).toBe(responseDate)
-            expect(response.body).toMatchObject(LaucnhDataNoDate)
+            expect(response.body).toMatchObject(completeLaunchData)
         })
 
         test('It should catch missing properties', async () => {
